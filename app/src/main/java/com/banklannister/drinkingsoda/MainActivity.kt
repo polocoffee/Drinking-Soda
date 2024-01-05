@@ -35,11 +35,11 @@ class MainActivity : ComponentActivity() {
                 ) {
 
                     var usedAmount by remember {
-                        mutableStateOf(100)
+                        mutableStateOf(2400)
                     }
 
                     val totalWaterAmount = remember {
-                        2500
+                        2400
                     }
 
                     Column(
@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
 
                         Button(
                             onClick = {
-                                usedAmount += 200
+                                usedAmount -= 300
                             },
                             colors = ButtonDefaults.buttonColors(containerColor = WaterColor)
                         ) {
